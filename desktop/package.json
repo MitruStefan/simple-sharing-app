@@ -1,0 +1,24 @@
+{
+	"name": "sharingapp",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "electron ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MitruStefan/simple-sharing-app.git"
+	},
+	"author": "stefanin",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/MitruStefan/simple-sharing-app/issues"
+	},
+	"homepage": "https://github.com/MitruStefan/simple-sharing-app#readme",
+	"description": "",
+	"dependencies": {
+		"electron": "^33.2.0",
+		"form-data": "^4.0.1"
+	}
+}
