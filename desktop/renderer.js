@@ -1,3 +1,5 @@
+const { ipcRenderer } = require('electron');
+
 document.getElementById('upload-button').addEventListener('click', async () => {
 	const formData = new FormData(document.getElementById('uploadForm'));
 	const fileInput = document.getElementById('fileInput');
@@ -31,4 +33,10 @@ document.getElementById('upload-button').addEventListener('click', async () => {
 		status.textContent = `Error: ${error.message}`;
 		status.style.color = 'red';
 	}
+});
+
+// Listen for WebSocket messages
+ipcRenderer.on('ws-message', (event, message) => {
+	console.log(`WebSocket message: ${message}`);
+	// Handle the WebSocket message as needed
 });
